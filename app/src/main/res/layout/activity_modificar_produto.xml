@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarProdutoActivity">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEditNome"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEditDescricao"
+        android:layout_below="@+id/etEditNome"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/etEditDescricao"
+        >
+
+        <Button
+            android:id="@+id/btnAtualizar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Atualizar"/>
+        <Button
+            android:id="@+id/btnexcluir"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Excluir"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
